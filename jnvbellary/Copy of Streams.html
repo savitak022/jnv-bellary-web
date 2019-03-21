@@ -1,0 +1,1951 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" /><meta name="robots" content="index, follow"/><meta name="author" content="FreelanceBangalore.com"/>
+	<title>JNV Streams</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<script src="js/jquery-1.4.1.min.js" type="text/javascript"></script>
+	<script src="js/jquery.jcarousel.pack.js" type="text/javascript"></script>
+	<script src="js/jquery-func.js" type="text/javascript"></script>
+
+
+    <style type="text/css">
+        .style1
+        {
+            height: 30.75pt;
+            width: 270pt;
+            color: #21415A;
+            font-size: 11.0pt;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: justify;
+            vertical-align: middle;
+            white-space: normal;
+            border-left: 1.0pt solid windowtext;
+            border-right-style: none;
+            border-right-color: inherit;
+            border-right-width: medium;
+            border-top: 1.0pt solid black;
+            border-bottom-style: none;
+            border-bottom-color: inherit;
+            border-bottom-width: medium;
+            padding: 0px;
+        }
+        .style2
+        {
+            width: 95pt;
+            color: black;
+            font-size: 11.0pt;
+            font-weight: 700;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border-left: 1.0pt solid windowtext;
+            border-right-style: none;
+            border-right-color: inherit;
+            border-right-width: medium;
+            border-top: 1.0pt solid black;
+            border-bottom-style: none;
+            border-bottom-color: inherit;
+            border-bottom-width: medium;
+            padding: 0px;
+        }
+        .style3
+        {
+            height: 15.75pt;
+            width: 95pt;
+            color: #21415A;
+            font-size: 11.0pt;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border-left: 1.0pt solid windowtext;
+            border-right-style: none;
+            border-right-color: inherit;
+            border-right-width: medium;
+            border-top-style: none;
+            border-top-color: inherit;
+            border-top-width: medium;
+            border-bottom: 1.0pt solid windowtext;
+            padding: 0px;
+        }
+        .style4
+        {
+            height: 78.75pt;
+            width: 270pt;
+            color: #21415A;
+            font-size: 11.0pt;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: justify;
+            vertical-align: middle;
+            white-space: normal;
+            border-left: 1.0pt solid windowtext;
+            border-right-style: none;
+            border-right-color: inherit;
+            border-right-width: medium;
+            border-top: 1.0pt solid windowtext;
+            border-bottom-style: none;
+            border-bottom-color: inherit;
+            border-bottom-width: medium;
+            padding: 0px;
+        }
+        .style5
+        {
+            width: 61pt;
+            color: #21415A;
+            font-size: 11.0pt;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border-left-style: none;
+            border-left-color: inherit;
+            border-left-width: medium;
+            border-right: 1.0pt solid windowtext;
+            border-top-style: none;
+            border-top-color: inherit;
+            border-top-width: medium;
+            border-bottom: 1.0pt solid windowtext;
+            padding: 0px;
+        }
+        .style6
+        {
+            width: 17pt;
+            color: #21415A;
+            font-size: 11.0pt;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border-left-style: none;
+            border-left-color: inherit;
+            border-left-width: medium;
+            border-right: 1.0pt solid windowtext;
+            border-top-style: none;
+            border-top-color: inherit;
+            border-top-width: medium;
+            border-bottom: 1.0pt solid windowtext;
+            padding: 0px;
+        }
+        .style7
+        {
+            height: 15.75pt;
+            width: 61pt;
+            color: #21415A;
+            font-size: 11.0pt;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border-left-style: none;
+            border-left-color: inherit;
+            border-left-width: medium;
+            border-right: 1.0pt solid windowtext;
+            border-top-style: none;
+            border-top-color: inherit;
+            border-top-width: medium;
+            border-bottom: 1.0pt solid windowtext;
+            padding: 0px;
+        }
+        .style8
+        {
+            height: 42.75pt;
+            width: 270pt;
+            color: #21415A;
+            font-size: 11.0pt;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: general;
+            vertical-align: middle;
+            white-space: normal;
+            border-left: 1.0pt solid windowtext;
+            border-right-style: none;
+            border-right-color: inherit;
+            border-right-width: medium;
+            border-top: 1.0pt solid windowtext;
+            border-bottom: 1.0pt solid windowtext;
+            padding: 0px;
+        }
+        .style9
+        {
+            width: 95pt;
+            color: #21415A;
+            font-size: 11.0pt;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border-left: 1.0pt solid windowtext;
+            border-right-style: none;
+            border-right-color: inherit;
+            border-right-width: medium;
+            border-top-style: none;
+            border-top-color: inherit;
+            border-top-width: medium;
+            border-bottom: 1.0pt solid windowtext;
+            padding: 0px;
+        }
+        .style10
+        {
+            height: 15.75pt;
+            width: 20pt;
+            color: #21415A;
+            font-size: 11.0pt;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: general;
+            vertical-align: middle;
+            white-space: normal;
+            border-left: 1.0pt solid windowtext;
+            border-right: 1.0pt solid windowtext;
+            border-top: 1.0pt solid windowtext;
+            border-bottom-style: none;
+            border-bottom-color: inherit;
+            border-bottom-width: medium;
+            padding: 0px;
+        }
+        .style11
+        {
+            width: 250pt;
+            color: #21415A;
+            font-size: 11.0pt;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: justify;
+            vertical-align: middle;
+            white-space: normal;
+            border-left: 1.0pt solid windowtext;
+            border-right: 1.0pt solid windowtext;
+            border-top: 1.0pt solid windowtext;
+            border-bottom-style: none;
+            border-bottom-color: inherit;
+            border-bottom-width: medium;
+            padding: 0px;
+        }
+        .style12
+        {
+            width: 95pt;
+            color: #21415A;
+            font-size: 11.0pt;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border-left: 1.0pt solid windowtext;
+            border-right-style: none;
+            border-right-color: inherit;
+            border-right-width: medium;
+            border-top: 1.0pt solid windowtext;
+            border-bottom-style: none;
+            border-bottom-color: inherit;
+            border-bottom-width: medium;
+            padding: 0px;
+        }
+        .style13
+        {
+            height: 30.75pt;
+            width: 20pt;
+            color: #21415A;
+            font-size: 11.0pt;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: general;
+            vertical-align: middle;
+            white-space: normal;
+            border-left: 1.0pt solid windowtext;
+            border-right: 1.0pt solid windowtext;
+            border-top: 1.0pt solid windowtext;
+            border-bottom-style: none;
+            border-bottom-color: inherit;
+            border-bottom-width: medium;
+            padding: 0px;
+        }
+        .style14
+        {
+            width: 250pt;
+            color: #21415A;
+            font-size: 11.0pt;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: justify;
+            vertical-align: middle;
+            white-space: normal;
+            border-left-style: none;
+            border-left-color: inherit;
+            border-left-width: medium;
+            border-right: 1.0pt solid windowtext;
+            border-top-style: none;
+            border-top-color: inherit;
+            border-top-width: medium;
+            border-bottom-style: none;
+            border-bottom-color: inherit;
+            border-bottom-width: medium;
+            padding: 0px;
+        }
+        .style15
+        {
+            height: 15.75pt;
+            width: 250pt;
+            color: #21415A;
+            font-size: 11.0pt;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: justify;
+            vertical-align: middle;
+            white-space: normal;
+            border-left-style: none;
+            border-left-color: inherit;
+            border-left-width: medium;
+            border-right: 1.0pt solid windowtext;
+            border-top-style: none;
+            border-top-color: inherit;
+            border-top-width: medium;
+            border-bottom: 1.0pt solid windowtext;
+            padding: 0px;
+        }
+        .style16
+        {
+            height: 90.75pt;
+            width: 20pt;
+            color: #21415A;
+            font-size: 11.0pt;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: general;
+            vertical-align: middle;
+            white-space: normal;
+            border-left: 1.0pt solid windowtext;
+            border-right: 1.0pt solid windowtext;
+            border-top: 1.0pt solid windowtext;
+            border-bottom-style: none;
+            border-bottom-color: inherit;
+            border-bottom-width: medium;
+            padding: 0px;
+        }
+        .style17
+        {
+            width: 95pt;
+            color: #21415A;
+            font-size: 11.0pt;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: left;
+            vertical-align: middle;
+            white-space: normal;
+            border-left: 1.0pt solid windowtext;
+            border-right-style: none;
+            border-right-color: inherit;
+            border-right-width: medium;
+            border-top: 1.0pt solid windowtext;
+            border-bottom-style: none;
+            border-bottom-color: inherit;
+            border-bottom-width: medium;
+            padding: 0px;
+        }
+        .style18
+        {
+            height: 15.0pt;
+            width: 95pt;
+            color: #21415A;
+            font-size: 11.0pt;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: left;
+            vertical-align: middle;
+            white-space: normal;
+            border-left: 1.0pt solid windowtext;
+            border-right-style: none;
+            border-right-color: inherit;
+            border-right-width: medium;
+            border-top-style: none;
+            border-top-color: inherit;
+            border-top-width: medium;
+            border-bottom-style: none;
+            border-bottom-color: inherit;
+            border-bottom-width: medium;
+            padding: 0px;
+        }
+        .style19
+        {
+            height: 15.75pt;
+            width: 95pt;
+            color: #21415A;
+            font-size: 11.0pt;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: left;
+            vertical-align: middle;
+            white-space: normal;
+            border-left: 1.0pt solid windowtext;
+            border-right-style: none;
+            border-right-color: inherit;
+            border-right-width: medium;
+            border-top-style: none;
+            border-top-color: inherit;
+            border-top-width: medium;
+            border-bottom: 1.0pt solid windowtext;
+            padding: 0px;
+        }
+        .style20
+        {
+            height: 15.75pt;
+            width: 20pt;
+            color: #21415A;
+            font-size: 11.0pt;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: general;
+            vertical-align: middle;
+            white-space: normal;
+            border-left: 1.0pt solid windowtext;
+            border-right: 1.0pt solid windowtext;
+            border-top-style: none;
+            border-top-color: inherit;
+            border-top-width: medium;
+            border-bottom: 1.0pt solid black;
+            padding: 0px;
+        }
+        .style21
+        {
+            width: 250pt;
+            color: #21415A;
+            font-size: 11.0pt;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: justify;
+            vertical-align: middle;
+            white-space: normal;
+            border-left-style: none;
+            border-left-color: inherit;
+            border-left-width: medium;
+            border-right: 1.0pt solid windowtext;
+            border-top-style: none;
+            border-top-color: inherit;
+            border-top-width: medium;
+            border-bottom: 1.0pt solid black;
+            padding: 0px;
+        }
+        .style22
+        {
+            width: 95pt;
+            color: #21415A;
+            font-size: 11.0pt;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border-left: 1.0pt solid windowtext;
+            border-right-style: none;
+            border-right-color: inherit;
+            border-right-width: medium;
+            border-top: 1.0pt solid windowtext;
+            border-bottom: 1.0pt solid black;
+            padding: 0px;
+        }
+        .style23
+        {
+            height: 15.0pt;
+            width: 48pt;
+            color: #21415A;
+            font-size: 11.0pt;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border: 1px solid windowtext;
+            padding: 0px;
+        }
+        .style24
+        {
+            width: 48pt;
+            color: #21415A;
+            font-size: 11.0pt;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border: 1px solid windowtext;
+            padding: 0px;
+        }
+        .style25
+        {
+            width: 48pt;
+            color: #21415A;
+            font-size: 11.0pt;
+            font-weight: 700;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border: 1px solid windowtext;
+            padding: 0px;
+        }
+        .style26
+        {
+            width: 48pt;
+            color: #21415A;
+            font-size: 11.0pt;
+            font-weight: 700;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border: 1px solid windowtext;
+            padding: 0px;
+            background: #8DB4E2;
+        }
+        .style27
+        {
+            height: 15.0pt;
+            width: 48pt;
+            color: #21415A;
+            font-size: 11.0pt;
+            font-weight: 700;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border: 1px solid windowtext;
+            padding: 0px;
+        }
+        .style28
+        {
+            height: 15.0pt;
+            width: 48pt;
+            font-size: 11.0pt;
+            color: white;
+            font-weight: 400;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-style: normal;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border-left-style: none;
+            border-left-color: inherit;
+            border-left-width: medium;
+            border-right: .5pt solid windowtext;
+            border-top-style: none;
+            border-top-color: inherit;
+            border-top-width: medium;
+            border-bottom: .5pt solid windowtext;
+            padding: 0px;
+            background: #4F81BD;
+        }
+        .style29
+        {
+            width: 48pt;
+            font-size: 11.0pt;
+            color: white;
+            font-weight: 400;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-style: normal;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border-left: .5pt solid windowtext;
+            border-right: .5pt solid windowtext;
+            border-top-style: none;
+            border-top-color: inherit;
+            border-top-width: medium;
+            border-bottom: .5pt solid windowtext;
+            padding: 0px;
+            background: #4F81BD;
+        }
+        .style30
+        {
+            width: 48pt;
+            font-size: 11.0pt;
+            color: white;
+            font-weight: 400;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-style: normal;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border-left: .5pt solid windowtext;
+            border-right-style: none;
+            border-right-color: inherit;
+            border-right-width: medium;
+            border-top-style: none;
+            border-top-color: inherit;
+            border-top-width: medium;
+            border-bottom: .5pt solid windowtext;
+            padding: 0px;
+            background: #4F81BD;
+        }
+        .style31
+        {
+            height: 15.0pt;
+            width: 48pt;
+            font-size: 11.0pt;
+            color: #21415A;
+            font-weight: 700;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-style: normal;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border-left-style: none;
+            border-left-color: inherit;
+            border-left-width: medium;
+            border-right: .5pt solid windowtext;
+            border-top: .5pt solid windowtext;
+            border-bottom: .5pt solid windowtext;
+            padding: 0px;
+            background: #DCE6F1;
+        }
+        .style32
+        {
+            width: 48pt;
+            font-size: 11.0pt;
+            color: #21415A;
+            font-weight: 400;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-style: normal;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border: 1px solid windowtext;
+            padding: 0px;
+            background: #DCE6F1;
+        }
+        .style33
+        {
+            width: 48pt;
+            font-size: 11.0pt;
+            color: #21415A;
+            font-weight: 400;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-style: normal;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border-left: .5pt solid windowtext;
+            border-right-style: none;
+            border-right-color: inherit;
+            border-right-width: medium;
+            border-top: .5pt solid windowtext;
+            border-bottom: .5pt solid windowtext;
+            padding: 0px;
+            background: #DCE6F1;
+        }
+        .style34
+        {
+            height: 15.0pt;
+            width: 48pt;
+            font-size: 11.0pt;
+            color: #21415A;
+            font-weight: 700;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-style: normal;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border-left-style: none;
+            border-left-color: inherit;
+            border-left-width: medium;
+            border-right: .5pt solid windowtext;
+            border-top: .5pt solid windowtext;
+            border-bottom: .5pt solid windowtext;
+            padding: 0px;
+        }
+        .style35
+        {
+            width: 48pt;
+            font-size: 11.0pt;
+            color: #21415A;
+            font-weight: 400;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-style: normal;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border-left: .5pt solid windowtext;
+            border-right-style: none;
+            border-right-color: inherit;
+            border-right-width: medium;
+            border-top: .5pt solid windowtext;
+            border-bottom: .5pt solid windowtext;
+            padding: 0px;
+        }
+        .style36
+        {
+            width: 48pt;
+            font-size: 11.0pt;
+            color: #21415A;
+            font-weight: 700;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-style: normal;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border-left: .5pt solid windowtext;
+            border-right-style: none;
+            border-right-color: inherit;
+            border-right-width: medium;
+            border-top: .5pt solid windowtext;
+            border-bottom: .5pt solid windowtext;
+            padding: 0px;
+        }
+        .style37
+        {
+            height: 15.0pt;
+            width: 48pt;
+            font-size: 11.0pt;
+            color: #21415A;
+            font-weight: 700;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-style: normal;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border-left-style: none;
+            border-left-color: inherit;
+            border-left-width: medium;
+            border-right: .5pt solid windowtext;
+            border-top: .5pt solid windowtext;
+            border-bottom-style: none;
+            border-bottom-color: inherit;
+            border-bottom-width: medium;
+            padding: 0px;
+            background: #DCE6F1;
+        }
+        .style38
+        {
+            width: 48pt;
+            font-size: 11.0pt;
+            color: #21415A;
+            font-weight: 400;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-style: normal;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border-left: .5pt solid windowtext;
+            border-right: .5pt solid windowtext;
+            border-top: .5pt solid windowtext;
+            border-bottom-style: none;
+            border-bottom-color: inherit;
+            border-bottom-width: medium;
+            padding: 0px;
+            background: #DCE6F1;
+        }
+        .style39
+        {
+            width: 48pt;
+            font-size: 11.0pt;
+            color: #21415A;
+            font-weight: 400;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-style: normal;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border-left: .5pt solid windowtext;
+            border-right-style: none;
+            border-right-color: inherit;
+            border-right-width: medium;
+            border-top: .5pt solid windowtext;
+            border-bottom-style: none;
+            border-bottom-color: inherit;
+            border-bottom-width: medium;
+            padding: 0px;
+            background: #DCE6F1;
+        }
+        .style40
+        {
+            height: 15.0pt;
+            width: 48pt;
+            color: white;
+            font-size: 11.0pt;
+            font-weight: 700;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border-left: 1.0pt solid windowtext;
+            border-right: .5pt solid windowtext;
+            border-top: 1.0pt solid windowtext;
+            border-bottom: .5pt solid windowtext;
+            padding: 0px;
+            background: #4F81BD;
+        }
+        .style41
+        {
+            width: 48pt;
+            color: white;
+            font-size: 11.0pt;
+            font-weight: 700;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border-left: .5pt solid windowtext;
+            border-right: .5pt solid windowtext;
+            border-top: 1.0pt solid windowtext;
+            border-bottom: .5pt solid windowtext;
+            padding: 0px;
+            background: #4F81BD;
+        }
+        .style42
+        {
+            width: 48pt;
+            color: white;
+            font-size: 11.0pt;
+            font-weight: 700;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border-left: .5pt solid windowtext;
+            border-right: 1.0pt solid windowtext;
+            border-top: 1.0pt solid windowtext;
+            border-bottom: .5pt solid windowtext;
+            padding: 0px;
+            background: #4F81BD;
+        }
+        .style43
+        {
+            height: 15.0pt;
+            width: 48pt;
+            color: #21415A;
+            font-size: 11.0pt;
+            font-weight: 700;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border-left: 1.0pt solid windowtext;
+            border-right: .5pt solid windowtext;
+            border-top: .5pt solid windowtext;
+            border-bottom: .5pt solid windowtext;
+            padding: 0px;
+            background: #DCE6F1;
+        }
+        .style44
+        {
+            width: 48pt;
+            color: #21415A;
+            font-size: 11.0pt;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border-left: .5pt solid windowtext;
+            border-right: 1.0pt solid windowtext;
+            border-top: .5pt solid windowtext;
+            border-bottom: .5pt solid windowtext;
+            padding: 0px;
+            background: #DCE6F1;
+        }
+        .style45
+        {
+            height: 15.0pt;
+            width: 48pt;
+            color: #21415A;
+            font-size: 11.0pt;
+            font-weight: 700;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border-left: 1.0pt solid windowtext;
+            border-right: .5pt solid windowtext;
+            border-top: .5pt solid windowtext;
+            border-bottom: .5pt solid windowtext;
+            padding: 0px;
+        }
+        .style46
+        {
+            width: 48pt;
+            color: #21415A;
+            font-size: 11.0pt;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border-left: .5pt solid windowtext;
+            border-right: 1.0pt solid windowtext;
+            border-top: .5pt solid windowtext;
+            border-bottom: .5pt solid windowtext;
+            padding: 0px;
+        }
+        .style47
+        {
+            height: 15.75pt;
+            width: 48pt;
+            color: #21415A;
+            font-size: 11.0pt;
+            font-weight: 700;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border-left: 1.0pt solid windowtext;
+            border-right: .5pt solid windowtext;
+            border-top: .5pt solid windowtext;
+            border-bottom: 1.0pt solid windowtext;
+            padding: 0px;
+        }
+        .style48
+        {
+            width: 48pt;
+            color: #21415A;
+            font-size: 11.0pt;
+            font-weight: 700;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border-left: .5pt solid windowtext;
+            border-right: .5pt solid windowtext;
+            border-top: .5pt solid windowtext;
+            border-bottom: 1.0pt solid windowtext;
+            padding: 0px;
+        }
+        .style49
+        {
+            width: 48pt;
+            color: #21415A;
+            font-size: 11.0pt;
+            font-weight: 700;
+            font-style: normal;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            vertical-align: middle;
+            white-space: normal;
+            border-left: .5pt solid windowtext;
+            border-right: 1.0pt solid windowtext;
+            border-top: .5pt solid windowtext;
+            border-bottom: 1.0pt solid windowtext;
+            padding: 0px;
+        }
+    </style>
+
+
+</head>
+<body>
+<div style=" width:1000px; margin:auto;">
+<div class="topmenu">
+<a href ="index.html">Home</a>
+<a target="_blank" href="http://navodayahyd.gov.in/">NVS RO</a>
+<a target="_blank" href ="http://navodaya.nic.in/">NVS (HQ)</a>
+<a target="_blank" href ="http://cbse.nic.in/">CBSE</a>
+<a target="_blank" href ="http://ncert.nic.in/">NCERT</a>
+<a href ="http://nroer.gov.in/home" target="_blank" >NROER</a> <a href ="http://www.kvbellary.ac.in/" target="_blank" >KV BELLARY</a>
+<a href ="contactus.html" class="last">Contact</a>
+</div>
+	<div class="cl">&nbsp;</div>
+		<h1 id="logo"><a href="index.html"><img alt=""  src="images/logo.png" /></a></h1>
+		
+			<div class="header_pannel">
+          
+            <div class="hd_pnl2">
+            <h3 style="margin-left: -9px;"><img alt="" src="images/email.png" style="float: left; margin-top: -6px; margin-right: 6px;" /> jnvbellary87@yahoo.com </h3>
+              <h3><img alt="" src="images/phone.png" style="float: left;  margin-right: 6px;" /> +91-08391–223490</h3>
+                <h3><img alt="" src="images/fax.png" style="float: left;  margin-right: 6px;" /> 0839-223237 </h3>
+            
+            </div>
+
+			
+		  <div class="hd_pnl1"><h1 style=" text-align:center;">जवाहर नवोदय विद्यालय बल्लारि</h1>
+            
+            <h1 style=" text-align:center;">JAWAHAR NAVODAYA VIDYALAYA BALLARI</h1>
+
+           <h3 style=" text-align:center;">An Autonomous Organization under Ministry of HRD <br />(Dept. of School Education and Literacy, Govt. of India)</h3>
+            </div>
+            </div>
+			<div class="cl">&nbsp;</div>
+		
+		<div class="cl">&nbsp;</div>
+        <br />
+    
+</div>
+<div id="navigation" style=" width:1022px; margin:auto;">
+			<ul>
+			    <li>
+			    	<a href="index.html" ><span>Home</span></a>
+			    	
+			    </li>
+			    <li>
+			    	<a href="aboutus.html"><span>About us<img alt="" style="border:0;" class="downicon" src="./images/navigation-arr.png"/></span></a>
+			    	<ul>
+			    		<li><a href="contactus.html">Contact us</a></li>
+			    		<li><a href="Streams.html">Streams</a></li>
+			    		<li><a href="Enrolment.html">Enrolment</a></li>
+			    		<li><a href="Principals.html">Principals</a></li>
+			    	
+			    	</ul>
+			    </li>
+			    <li>
+			    	<a href="Academics.html"><span>Academics<img alt="" style="border:0;" class="downicon" src="./images/navigation-arr.png"/></span></a>
+			    	<ul>
+			    		<li><a href="jnsvt.html">JNVST</a></li>
+			    		<li><a href="Migration.html">Migration</a></li>
+			    		 
+			    		<li><a href="GamesandSports.html">Games and Sports</a></li>
+			    		<li><a href="Library.html">Library</a></li>
+			    		<li><a href="cluster.html">Cluster</a></li>
+			    	</ul>
+			    </li>
+			    <li>
+			    	<a href="Staff.html"><span>Staff</span></a>
+			    	
+			    </li>
+			    <li>
+			    	<a href="Results.html"><span>Results</span></a><ul><li><a href="JNVSTResults.html">School Results</a></li><li><a href="CBSEResults.html">CBSE Results</a></li><li><a href="StudentCorner.html">Student Corner</a></li></ul>
+			    
+			    </li>
+			    <li>
+			    	<a href="Finance.html" ><span>Finance<img alt="" style="border:0;" class="downicon" src="./images/navigation-arr.png"/></span></a>
+			    	<ul>
+			    		<li><a href="Funds.html">Funds</a></li>
+			    		<li><a href="Audit.html">Audit</a></li>
+			    		<li><a href="Procurement.html">Procurement</a></li>
+			    		
+			    	</ul>
+			    </li>
+			    <li>
+			    	<a href="Infrastructure.html"><span>Infrastructure<img alt="" style="border:0;" class="downicon" src="./images/navigation-arr.png"/></span></a>
+			    	<ul>
+			    		<li><a href="Location.html">Location</a></li>
+			    		<li><a href="ProjectsfromHQ.html">Projects from HQrs/RO</a></li>
+			    		<li><a href="VisitingPlaces.html">Visiting Places</a></li>
+			    		
+			    		<li><a target="_blank" href="http://www.bellary.nic.in/Hampi.htm">Popularity</a></li>
+			    		<li><a href="FeeStructure.html">Fee Structure</a></li>
+			    	</ul>
+			    </li>
+                 <li>
+			    	<a href="Activities.html"><span>Activities<img alt="" style="border:0;" class="downicon" src="./images/navigation-arr.png"/></span></a>
+			    	<ul>
+			    		<li><a href="Facilities.html">Facilities</a></li>
+			    		<li><a href="PaceSettingActivities.html">Pace Setting Activities</a></li>
+			    		<li><a href="ComputerEducation.html">Computer Education</a></li>
+			    		<li><a href="SpecialAchievements.html">Special Achievements</a></li>
+			    		<li><a href="CCA.html">CCA</a></li>
+                        <li><a href="NCC.html">NCC</a></li>
+                        <li><a href="festival.html">Festival</a></li>
+                        <li><a href="ScoutandGuide.html">Scout and Guide</a></li>
+			    	</ul>
+			    </li>
+                 <li>
+			    	<a href="Boards.html"><span>Boards<img alt="" style="border:0;" class="downicon" src="./images/navigation-arr.png"/></span></a>
+			    	<ul>
+			    		<li><a href="Inspection.html">Inspection</a></li>
+			    		
+			    		<li><a href="ALUMNI.html">Alumni</a></li>
+			    		<li><a href="ptc.html">PTC</a></li>
+			    		<li><a href="vac.html">VAC</a></li>
+			    		<li><a href="rti.html">RTI</a></li>
+                        <li><a href="vmc.html">VMC</a></li>
+			    	</ul>
+			    </li>
+                 <li style="border:none;">
+			    	<a href="Gallery.html"><span>Gallery</span></a>
+			    	
+			    </li>
+             
+			</ul>
+		</div>
+<div id="page" class="shell">
+	<!-- Logo + Search + Navigation -->
+   
+	<!-- END Logo + Search + Navigation -->
+	<!-- Header -->
+	<div id="header">
+	<div class="css3_pattern">
+    
+    <h2>Streams</h2>
+    </div>
+       </div>
+         
+          
+		<br />
+	
+    <div style=" clear:both;" ></div>
+  
+  <div>
+  <center>
+  <h2 >Streams:  2010-11 academic year</h2>
+  <br />
+  
+      <table border="0" cellpadding="0" cellspacing="0" style="border-collapse:
+ collapse;width:365pt" width="487">
+          <colgroup>
+              <col style="mso-width-source:userset;mso-width-alt:987;width:20pt" width="27" />
+              <col style="mso-width-source:userset;mso-width-alt:12178;width:250pt" 
+                  width="333" />
+              <col style="mso-width-source:userset;mso-width-alt:2962;width:61pt" 
+                  width="81" />
+              <col span="2" style="mso-width-source:userset;mso-width-alt:841;
+ width:17pt" width="23" />
+          </colgroup>
+          <tr height="20" style="height:15.0pt">
+              <td class="style1" colspan="2" height="41" rowspan="2" width="360">
+                  Highest Class</td>
+              <td class="style2" colspan="3" 
+                  style="border-right-style: solid; border-right-width: 1px; border-right-color: #000000" 
+                  width="127">
+                  XII</td>
+          </tr>
+          <tr height="21" style="height:15.75pt">
+              <td class="style3" colspan="3" height="21" 
+                  style="border-right-style: solid; border-right-width: 1px; border-right-color: #000000" 
+                  width="127">
+                  Science (PCMB)</td>
+          </tr>
+          <tr height="21" style="height:15.75pt;page-break-inside:avoid">
+              <td class="style4" colspan="2" height="105" rowspan="5" width="360">
+                  Stream strength of students<span>&nbsp;</span></td>
+              <td class="style5" 
+                  style="border-left-style: solid; border-left-width: 1px; border-left-color: #000000" 
+                  width="81">
+                  Stream</td>
+              <td class="style6" width="23">
+                  XI</td>
+              <td class="style6" width="23">
+                  XII</td>
+          </tr>
+          <tr height="21" style="height:15.75pt">
+              <td class="style7" height="21" 
+                  style="border-left-style: solid; border-left-width: 1px; border-left-color: #000000" 
+                  width="81">
+                  Humanities</td>
+              <td class="style6" width="23">
+                  --</td>
+              <td class="style6" width="23">
+                  --</td>
+          </tr>
+          <tr height="21" style="height:15.75pt">
+              <td class="style7" height="21" 
+                  style="border-left-style: solid; border-left-width: 1px; border-left-color: #000000" 
+                  width="81">
+                  Science</td>
+              <td class="style6" width="23">
+                  29</td>
+              <td class="style6" width="23">
+                  35</td>
+          </tr>
+          <tr height="21" style="height:15.75pt">
+              <td class="style7" height="21" 
+                  style="border-left-style: solid; border-left-width: 1px; border-left-color: #000000" 
+                  width="81">
+                  Commerce</td>
+              <td class="style6" width="23">
+                  --</td>
+              <td class="style6" width="23">
+                  --</td>
+          </tr>
+          <tr height="21" style="height:15.75pt">
+              <td class="style7" height="21" 
+                  style="border-left-style: solid; border-left-width: 1px; border-left-color: #000000" 
+                  width="81">
+                  Vocational</td>
+              <td class="style6" width="23">
+                  --</td>
+              <td class="style6" width="23">
+                  --</td>
+          </tr>
+          <tr height="57" style="mso-height-source:userset;height:42.75pt;page-break-inside:
+  avoid">
+              <td class="style8" colspan="2" height="57" width="360">
+                  Students Strength (As on October.2010 ) :</td>
+              <td class="style9" colspan="3" 
+                  style="border-right-style: solid; border-right-width: 1px; border-right-color: #000000" 
+                  width="127">
+                  470</td>
+          </tr>
+          <tr height="21" style="height:15.75pt;page-break-inside:avoid">
+              <td class="style10" height="21" width="27">
+                  (i)</td>
+              <td class="style11" width="333">
+                  Total no. of students selected through JNVST</td>
+              <td class="style12" colspan="3" 
+                  style="border-right-style: solid; border-right-width: 1px; border-right-color: #000000" 
+                  width="127">
+                  80 – (6th class)</td>
+          </tr>
+          <tr height="20" style="height:15.0pt;page-break-inside:avoid">
+              <td class="style13" height="41" rowspan="2" width="27">
+                  (ii)</td>
+              <td class="style14" width="333">
+                  Students belonging to PH category</td>
+              <td class="style12" colspan="3" rowspan="2" 
+                  style="border-right-style: solid; border-right-width: 1px; border-right-color: #000000" 
+                  width="127">
+                  PH (10)</td>
+          </tr>
+          <tr height="21" style="height:15.75pt">
+              <td class="style15" height="21" width="333">
+                  VH…………OH…………HI………….</td>
+          </tr>
+          <tr height="20" style="height:15.0pt;page-break-inside:avoid">
+              <td class="style16" height="121" rowspan="6" width="27">
+                  (iii)</td>
+              <td class="style11" rowspan="6" width="333">
+                  Staff ward</td>
+              <td class="style17" colspan="3" 
+                  style="border-right-style: solid; border-right-width: 1px; border-right-color: #000000" 
+                  width="127">
+                  03&nbsp; (6th class)</td>
+          </tr>
+          <tr height="20" style="height:15.0pt">
+              <td class="style18" colspan="3" height="20" 
+                  style="border-right-style: solid; border-right-width: 1px; border-right-color: #000000" 
+                  width="127">
+                  02&nbsp; ( 8th class)</td>
+          </tr>
+          <tr height="20" style="height:15.0pt">
+              <td class="style18" colspan="3" height="20" 
+                  style="border-right-style: solid; border-right-width: 1px; border-right-color: #000000" 
+                  width="127">
+                  06 &nbsp;( 9th class)</td>
+          </tr>
+          <tr height="20" style="height:15.0pt">
+              <td class="style18" colspan="3" height="20" 
+                  style="border-right-style: solid; border-right-width: 1px; border-right-color: #000000" 
+                  width="127">
+                  02&nbsp; (10th class)</td>
+          </tr>
+          <tr height="20" style="height:15.0pt">
+              <td class="style18" colspan="3" height="20" 
+                  style="border-right-style: solid; border-right-width: 1px; border-right-color: #000000" 
+                  width="127">
+                  02&nbsp; (11th class)</td>
+          </tr>
+          <tr height="21" style="height:15.75pt">
+              <td class="style19" colspan="3" height="21" 
+                  style="border-right-style: solid; border-right-width: 1px; border-right-color: #000000" 
+                  width="127">
+                  02&nbsp; (12th class)</td>
+          </tr>
+          <tr height="21" style="height:15.75pt;page-break-inside:avoid">
+              <td class="style20" height="21" width="27">
+                  (iv)</td>
+              <td class="style21" width="333">
+                  Total :Students Strength</td>
+              <td class="style22" colspan="3" 
+                  style="border-right-style: solid; border-right-width: 1px; border-right-color: #000000" 
+                  width="127">
+                  470</td>
+          </tr>
+      </table>
+  
+  <br />
+  <h2>Category, Class – Wise break – up of students strength (to be updated quarterly basis) :</h2>
+  <br />
+
+
+
+      <table border="0" cellpadding="0" cellspacing="0" style="border-collapse:
+ collapse;width:432pt" width="576">
+          <colgroup>
+              <col span="9" width="64" />
+          </colgroup>
+          <tr height="20">
+              <td class="style28" height="20" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #4F81BD none" 
+                  width="64">
+                  Class</td>
+              <td class="style29" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #4F81BD none" 
+                  width="64">
+                  Boys</td>
+              <td class="style29" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #4F81BD none" 
+                  width="64">
+                  Girls</td>
+              <td class="style29" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #4F81BD none" 
+                  width="64">
+                  Rural</td>
+              <td class="style29" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #4F81BD none" 
+                  width="64">
+                  Urban</td>
+              <td class="style29" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #4F81BD none" 
+                  width="64">
+                  SC</td>
+              <td class="style29" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #4F81BD none" 
+                  width="64">
+                  ST</td>
+              <td class="style29" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #4F81BD none" 
+                  width="64">
+                  GEN</td>
+              <td class="style30" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #4F81BD none" 
+                  width="64">
+                  Total</td>
+          </tr>
+          <tr height="20">
+              <td class="style31" height="20" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  VI</td>
+              <td class="style32" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  52</td>
+              <td class="style32" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  27</td>
+              <td class="style32" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  61</td>
+              <td class="style32" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  18</td>
+              <td class="style32" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  23</td>
+              <td class="style32" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  6</td>
+              <td class="style32" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  50</td>
+              <td class="style33" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  79</td>
+          </tr>
+          <tr height="20">
+              <td class="style34" height="20" 
+                  style="text-underline-style: none; text-line-through: none;" width="64">
+                  VII</td>
+              <td class="style24" width="64">
+                  53</td>
+              <td class="style24" width="64">
+                  27</td>
+              <td class="style24" width="64">
+                  60</td>
+              <td class="style24" width="64">
+                  20</td>
+              <td class="style24" width="64">
+                  23</td>
+              <td class="style24" width="64">
+                  6</td>
+              <td class="style24" width="64">
+                  51</td>
+              <td class="style35" 
+                  style="text-underline-style: none; text-line-through: none;" width="64">
+                  80</td>
+          </tr>
+          <tr height="20">
+              <td class="style31" height="20" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  VIII</td>
+              <td class="style32" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  51</td>
+              <td class="style32" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  27</td>
+              <td class="style32" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  60</td>
+              <td class="style32" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  18</td>
+              <td class="style32" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  23</td>
+              <td class="style32" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  7</td>
+              <td class="style32" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  48</td>
+              <td class="style33" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  78</td>
+          </tr>
+          <tr height="20">
+              <td class="style34" height="20" 
+                  style="text-underline-style: none; text-line-through: none;" width="64">
+                  IX</td>
+              <td class="style24" width="64">
+                  50</td>
+              <td class="style24" width="64">
+                  25</td>
+              <td class="style24" width="64">
+                  58</td>
+              <td class="style24" width="64">
+                  17</td>
+              <td class="style24" width="64">
+                  25</td>
+              <td class="style24" width="64">
+                  4</td>
+              <td class="style24" width="64">
+                  46</td>
+              <td class="style35" 
+                  style="text-underline-style: none; text-line-through: none;" width="64">
+                  75</td>
+          </tr>
+          <tr height="20">
+              <td class="style31" height="20" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  X</td>
+              <td class="style32" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  52</td>
+              <td class="style32" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  26</td>
+              <td class="style32" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  60</td>
+              <td class="style32" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  18</td>
+              <td class="style32" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  25</td>
+              <td class="style32" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  6</td>
+              <td class="style32" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  47</td>
+              <td class="style33" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  78</td>
+          </tr>
+          <tr height="20">
+              <td class="style34" height="20" 
+                  style="text-underline-style: none; text-line-through: none;" width="64">
+                  XI</td>
+              <td class="style24" width="64">
+                  26</td>
+              <td class="style24" width="64">
+                  7</td>
+              <td class="style24" width="64">
+                  27</td>
+              <td class="style24" width="64">
+                  6</td>
+              <td class="style24" width="64">
+                  8</td>
+              <td class="style24" width="64">
+                  1</td>
+              <td class="style24" width="64">
+                  24</td>
+              <td class="style35" 
+                  style="text-underline-style: none; text-line-through: none;" width="64">
+                  33</td>
+          </tr>
+          <tr height="20">
+              <td class="style31" height="20" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  XII</td>
+              <td class="style32" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  20</td>
+              <td class="style32" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  8</td>
+              <td class="style32" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  20</td>
+              <td class="style32" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  8</td>
+              <td class="style32" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  8</td>
+              <td class="style32" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  1</td>
+              <td class="style32" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  19</td>
+              <td class="style33" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  28</td>
+          </tr>
+          <tr height="20">
+              <td class="style34" height="20" 
+                  style="text-underline-style: none; text-line-through: none;" width="64">
+                  Total</td>
+              <td class="style25" width="64">
+                  304</td>
+              <td class="style25" width="64">
+                  147</td>
+              <td class="style25" width="64">
+                  346</td>
+              <td class="style25" width="64">
+                  105</td>
+              <td class="style25" width="64">
+                  135</td>
+              <td class="style25" width="64">
+                  31</td>
+              <td class="style25" width="64">
+                  285</td>
+              <td class="style36" 
+                  style="text-underline-style: none; text-line-through: none;" width="64">
+                  451</td>
+          </tr>
+          <tr height="20">
+              <td class="style37" height="20" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  %age</td>
+              <td class="style38" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  97</td>
+              <td class="style38" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  87.5</td>
+              <td class="style38" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  96</td>
+              <td class="style38" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  87.5</td>
+              <td class="style38" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  100</td>
+              <td class="style38" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  86</td>
+              <td class="style38" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  76.6</td>
+              <td class="style39" 
+                  style="text-underline-style: none; text-line-through: none; mso-pattern: #DCE6F1 none" 
+                  width="64">
+                  94</td>
+          </tr>
+      </table>
+
+
+      <br /><h2>Through Staff Ward Quota</h2>
+
+      <br />
+
+
+      <table border="0" cellpadding="0" cellspacing="0" style="border-collapse:
+ collapse;width:432pt" width="576">
+          <colgroup>
+              <col span="9" width="64" />
+          </colgroup>
+          <tr height="20">
+              <td class="style40" height="20" width="64">
+                  Class</td>
+              <td class="style41" width="64">
+                  Boys</td>
+              <td class="style41" width="64">
+                  Girls</td>
+              <td class="style41" width="64">
+                  Rural</td>
+              <td class="style41" width="64">
+                  Urban</td>
+              <td class="style41" width="64">
+                  SC</td>
+              <td class="style41" width="64">
+                  ST</td>
+              <td class="style41" width="64">
+                  GEN</td>
+              <td class="style42" width="64">
+                  Total</td>
+          </tr>
+          <tr height="20">
+              <td class="style43" height="20" width="64">
+                  VI</td>
+              <td class="style32" width="64">
+                  2</td>
+              <td class="style32" width="64">
+                  1</td>
+              <td class="style32" width="64">
+                  0</td>
+              <td class="style32" width="64">
+                  3</td>
+              <td class="style32" width="64">
+                  1</td>
+              <td class="style32" width="64">
+                  0</td>
+              <td class="style32" width="64">
+                  2</td>
+              <td class="style44" width="64">
+                  3</td>
+          </tr>
+          <tr height="20">
+              <td class="style45" height="20" width="64">
+                  VII</td>
+              <td class="style24" width="64">
+                  1</td>
+              <td class="style24" width="64">
+                  1</td>
+              <td class="style24" width="64">
+                  0</td>
+              <td class="style24" width="64">
+                  2</td>
+              <td class="style24" width="64">
+                  2</td>
+              <td class="style24" width="64">
+                  0</td>
+              <td class="style24" width="64">
+                  0</td>
+              <td class="style46" width="64">
+                  2</td>
+          </tr>
+          <tr height="20">
+              <td class="style43" height="20" width="64">
+                  VIII</td>
+              <td class="style32" width="64">
+                  3</td>
+              <td class="style32" width="64">
+                  3</td>
+              <td class="style32" width="64">
+                  1</td>
+              <td class="style32" width="64">
+                  5</td>
+              <td class="style32" width="64">
+                  1</td>
+              <td class="style32" width="64">
+                  0</td>
+              <td class="style32" width="64">
+                  5</td>
+              <td class="style44" width="64">
+                  6</td>
+          </tr>
+          <tr height="20">
+              <td class="style45" height="20" width="64">
+                  IX</td>
+              <td class="style24" width="64">
+                  0</td>
+              <td class="style24" width="64">
+                  2</td>
+              <td class="style24" width="64">
+                  0</td>
+              <td class="style24" width="64">
+                  2</td>
+              <td class="style24" width="64">
+                  1</td>
+              <td class="style24" width="64">
+                  0</td>
+              <td class="style24" width="64">
+                  1</td>
+              <td class="style46" width="64">
+                  2</td>
+          </tr>
+          <tr height="20">
+              <td class="style43" height="20" width="64">
+                  X</td>
+              <td class="style32" width="64">
+                  1</td>
+              <td class="style32" width="64">
+                  1</td>
+              <td class="style32" width="64">
+                  0</td>
+              <td class="style32" width="64">
+                  2</td>
+              <td class="style32" width="64">
+                  0</td>
+              <td class="style32" width="64">
+                  0</td>
+              <td class="style32" width="64">
+                  2</td>
+              <td class="style44" width="64">
+                  2</td>
+          </tr>
+          <tr height="20">
+              <td class="style45" height="20" width="64">
+                  XI</td>
+              <td class="style24" width="64">
+                  0</td>
+              <td class="style24" width="64">
+                  2</td>
+              <td class="style24" width="64">
+                  1</td>
+              <td class="style24" width="64">
+                  1</td>
+              <td class="style24" width="64">
+                  1</td>
+              <td class="style24" width="64">
+                  0</td>
+              <td class="style24" width="64">
+                  1</td>
+              <td class="style46" width="64">
+                  2</td>
+          </tr>
+          <tr height="20">
+              <td class="style43" height="20" width="64">
+                  XII</td>
+              <td class="style32" width="64">
+                  2</td>
+              <td class="style32" width="64">
+                  0</td>
+              <td class="style32" width="64">
+                  1</td>
+              <td class="style32" width="64">
+                  1</td>
+              <td class="style32" width="64">
+                  0</td>
+              <td class="style32" width="64">
+                  0</td>
+              <td class="style32" width="64">
+                  2</td>
+              <td class="style44" width="64">
+                  2</td>
+          </tr>
+          <tr height="21">
+              <td class="style47" height="21" width="64">
+                  Total</td>
+              <td class="style48" width="64">
+                  9</td>
+              <td class="style48" width="64">
+                  10</td>
+              <td class="style48" width="64">
+                  3</td>
+              <td class="style48" width="64">
+                  16</td>
+              <td class="style48" width="64">
+                  6</td>
+              <td class="style48" width="64">
+                  0</td>
+              <td class="style48" width="64">
+                  13</td>
+              <td class="style49" width="64">
+                  19</td>
+          </tr>
+      </table>
+
+      <br />
+
+      <h2>Total Strength  (b+c)</h2>
+      <br />
+
+
+      <table border="0" cellpadding="0" cellspacing="0" style="border-collapse:
+ collapse;width:432pt" width="576">
+          <colgroup>
+              <col span="9" width="64" />
+          </colgroup>
+          <tr height="20">
+              <td class="style23" height="20" width="64">
+                  &nbsp;</td>
+              <td class="style26" width="64">
+                  Boys</td>
+              <td class="style26" width="64">
+                  Girls</td>
+              <td class="style26" width="64">
+                  Rural</td>
+              <td class="style26" width="64">
+                  Urban</td>
+              <td class="style26" width="64">
+                  SC</td>
+              <td class="style26" width="64">
+                  ST</td>
+              <td class="style26" width="64">
+                  GEN</td>
+              <td class="style26" width="64">
+                  Total</td>
+          </tr>
+          <tr height="20">
+              <td class="style27" height="20" width="64">
+                  Total</td>
+              <td class="style24" width="64">
+                  313</td>
+              <td class="style24" width="64">
+                  157</td>
+              <td class="style24" width="64">
+                  349</td>
+              <td class="style24" width="64">
+                  121</td>
+              <td class="style24" width="64">
+                  141</td>
+              <td class="style24" width="64">
+                  31</td>
+              <td class="style24" width="64">
+                  298</td>
+              <td class="style24" width="64">
+                  470</td>
+          </tr>
+          <tr height="20">
+              <td class="style27" height="20" width="64">
+                  &nbsp;(%)</td>
+              <td class="style24" width="64">
+                  97.5</td>
+              <td class="style24" width="64">
+                  88.16</td>
+              <td class="style24" width="64">
+                  96.12</td>
+              <td class="style24" width="64">
+                  88.97</td>
+              <td class="style24" width="64">
+                  100</td>
+              <td class="style24" width="64">
+                  86</td>
+              <td class="style24" width="64">
+                  78</td>
+              <td class="style24" width="64">
+                  94</td>
+          </tr>
+      </table>
+
+      <br /><br />
+  </center>
+  </div>
+         
+
+    <!-- Main -->
+	
+	<!-- END Main -->
+	<!-- Footer -->
+	<div id="footer">
+		
+		<p>&copy; 2015 - &nbsp; <a href="http://www.jnvbellary.gov/"  title="JNV Bellary">Jnv Bellary</a> | All Rights Reserved</p>
+		<div class="cl">&nbsp;</div>
+	</div>
+	<!-- END Footer -->
+	<br />
+</div>
+
+
+
+
+</body>
+</html>
